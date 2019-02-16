@@ -1,12 +1,11 @@
 package custom
 
 import (
+	"bitbucket.org/marktohark/nfuusrsystem/controller/HomeController"
 	"github.com/gin-gonic/gin"
 )
 
 func Default(r *gin.Engine) error {
-	r.GET("test", func(c *gin.Context) {
-		c.String(200, "hello")
-	})
+	r.GET("index", HomeController.Index)
 	return nil
 }
