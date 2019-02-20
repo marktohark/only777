@@ -122,3 +122,4 @@ html template:
 https://github.com/gin-gonic/gin#html-rendering
 
 ## Access static directory
+you can just visit http://domainName/static
