@@ -6,6 +6,6 @@ import (
 )
 
 func Default(r *gin.Engine) error {
-	r.GET("index", HomeController.Index)
+	r.GET("/", HomeController.Index)
 	return nil
 }

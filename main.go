@@ -24,6 +24,9 @@ func main() {
 
 	//set view path
 	r.LoadHTMLGlob("views/*")
+	//set static
+	static_name, _ := config.Get("STATIC_URL_NAME")
+	r.Static(static_name, "static")
 
 	//global middleware reg
 	global.RegGlobalMiddleware(r)
