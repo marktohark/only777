@@ -95,7 +95,7 @@ r.Get("middleware",
       HomeController.Index)
 ```
 ## Env
-Threr is a .env.example under the root directory.   
+There is a .env.example under the root directory.   
 copy this file and rename file to ".env".
 ```
 PORT => port
