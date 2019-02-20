@@ -14,7 +14,7 @@ $> go mod tidy
 - [Middleware](#Middleware)
 - [Env](#Env)
 - [View](#View)
-- [Access static directory](#Access)
+- [Access static directory](#access-static-directory)
 
 ## Route
 1.use default route function   
