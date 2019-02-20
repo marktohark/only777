@@ -122,4 +122,5 @@ html template:
 https://github.com/gin-gonic/gin#html-rendering
 
 ## Access static directory
-you can just visit http://domainName/static
+you can just visit http://domainName/static   
+if .env => STATIC_URL_NAME is not "static", http://domainName/{STATIC_URL_NAME}
