@@ -1,7 +1,10 @@
 package HomeController
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"net/http"
+)
 
 func Index(c *gin.Context) {
-	c.String(200, "hi")
+	c.HTML(http.StatusOK, "index.html", gin.H{})
 }

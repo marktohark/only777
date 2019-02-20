@@ -6,14 +6,24 @@ import (
 	"bitbucket.org/marktohark/nfuusrsystem/middleware/global"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"io"
+	"os"
 )
 
 func main() {
+	// Logging to a file.
+	gin.DisableConsoleColor()
+	f, _ := os.Create("./log/gin.log")
+	gin.DefaultWriter = io.MultiWriter(f)
+
 	//read .env
 	config.Init()
 
 	//get engine
 	r := gin.Default()
+
+	//set view path
+	r.LoadHTMLGlob("views/*")
 
 	//global middleware reg
 	global.RegGlobalMiddleware(r)
